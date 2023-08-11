@@ -6,8 +6,7 @@ function PMS2RGB(C){
     return B>=0?aRGB[B]:""
 }
 function RGB2PMS(C){
-    var B=aRGB.indexOf(C);
-    return B>=0?aPMS[B]:""
+    return C in _colors?_colors[C]:""
 }
 
 $.fn.extend({ 
